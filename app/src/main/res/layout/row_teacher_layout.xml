@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imgview_teacher"
+                android:layout_width="@dimen/teacher_img_width"
+                android:layout_height="@dimen/teacher_img_height"
+                android:layout_alignParentEnd="true"
+                app:riv_corner_radius="20dp"
+                tools:src="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_teacher_name"
+                style="@style/nameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_toStartOf="@id/imgview_teacher"
+                tools:text="Yogesh Natia" />
+
+            <TextView
+                android:id="@+id/tv_teacher_sub_qulification"
+                style="@style/qualificatonTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_teacher_name"
+                android:layout_marginEnd="8dp"
+                android:layout_toStartOf="@id/imgview_teacher"
+                android:text="IIT Kanpur" />
+
+            <Button
+                android:id="@+id/btn_view_more"
+                style="@style/buttonViewMore"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@id/tv_teacher_sub_qulification"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/background_button_view_more"
+                android:text="View More"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

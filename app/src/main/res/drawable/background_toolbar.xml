@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:startColor="@color/toolbar_start" android:endColor="@color/toolbar_end"/>
+    <corners android:bottomLeftRadius="@dimen/toolbar_corner_radius"
+        android:bottomRightRadius="@dimen/toolbar_corner_radius"/>
+
+</shape>
