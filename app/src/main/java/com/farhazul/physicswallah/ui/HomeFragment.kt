@@ -40,7 +40,7 @@ class HomeFragment : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentHomeBinding.inflate(layoutInflater)
         setRecyclerView()
-
+        checkInternet()
         return binding.root
     }
 
@@ -54,7 +54,7 @@ class HomeFragment : Fragment() {
 
     override fun onStart() {
         // checking for internet connection onStart()
-        checkInternet()
+
         super.onStart()
     }
 
